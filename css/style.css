@@ -1,0 +1,326 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* common css */
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.btn-panda {
+  border-radius: 6px;
+  padding: 14px 20px;
+  border: none;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 88, 155) -0.006%,
+    rgb(255, 19, 111) 99.994%
+  );
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: rgb(255, 255, 255);
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color: rgb(31, 31, 31);
+}
+
+/* custom css */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-parent {
+  color: #bababa;
+  position: relative;
+}
+
+.search-parent input {
+  width: 508px;
+  padding: 15px 30px;
+  border-radius: 66px;
+  border: none;
+  background: rgb(241, 241, 241);
+}
+
+.search-parent i {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-item li a {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+}
+
+.product-li {
+  position: relative;
+}
+
+.drop-down-nav-items {
+  position: absolute;
+  top: 30%;
+  left: -30px;
+  padding: 25px 10px;
+  list-style: none;
+  background-color: rgb(255, 253, 253);
+  text-align: center;
+  width: 130px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 2px 0px 8px 0px rgb(0 0 0 / 15%);
+  visibility: hidden;
+}
+
+.drop-down-nav-items li {
+  margin: 5px 0;
+}
+
+.product-li:hover .drop-down-nav-items {
+  visibility: visible;
+  top: 100%;
+  transition: 0.5s;
+}
+
+/* banner */
+.banner-container {
+  background: #feeae9;
+  display: flex;
+  gap: 147px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 46px;
+  margin-top: 60px;
+  border-radius: 15px;
+}
+
+.banner-content h2 {
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 8px;
+}
+
+.banner-content p {
+  color: rgb(78, 78, 78);
+  font-weight: 400;
+  line-height: 26px;
+  width: 456px;
+}
+
+.banner-price {
+  color: rgb(255, 19, 111);
+  font-size: 41px;
+  font-weight: 500;
+  line-height: 62px;
+  display: block;
+  margin: 10px 0;
+}
+
+.banner-img {
+  height: 378px;
+  width: 402px;
+}
+
+/* category section */
+.categories {
+  margin: 64px auto;
+}
+
+.categories h2 {
+  margin-bottom: 20px;
+}
+
+.categories-parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.category-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.category-content h3 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+}
+
+.category-content:nth-child(1) {
+  /* Linear */
+  background: linear-gradient(
+    151.85deg,
+    rgb(255, 156, 53) 14.537%,
+    rgb(255, 208, 25) 84.486%
+  );
+}
+
+.category-content:nth-child(2) {
+  /* Linear */
+  background: linear-gradient(
+    180deg,
+    rgb(255, 88, 155) -0.006%,
+    rgb(255, 19, 111) 99.994%
+  );
+}
+
+.category-content:nth-child(3) {
+  background: linear-gradient(
+    170.38deg,
+    rgb(66, 137, 255) 15.416%,
+    rgb(63, 7, 248) 74.29%
+  );
+}
+
+/* shoes and backpack section */
+.shoe-back-sec {
+  background: #f4f4f4;
+}
+
+.shoe-container-content {
+  padding: 60px 0;
+}
+
+.section-head-see-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.section-head-see-title a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 157, 0);
+}
+
+/* shoe card */
+.shoes-parent {
+  display: flex;
+  gap: 20px;
+}
+
+.shoe-card {
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 24px;
+  box-shadow: 2px 0px 8px 0px rgb(0 0 0 / 15%);
+}
+.shoe-card img {
+  width: 336px;
+  height: 202px;
+}
+
+.shoe-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.shoe-card p {
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  margin-top: 15px;
+}
+
+.shoe-price {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  display: block;
+  margin: 15px 0;
+}
+
+.shoe-card .btn-panda {
+  background: black;
+  padding: 16px 28px;
+}
+
+/* contact us */
+.contact-us {
+  background: white;
+}
+
+.contact-us-container {
+  background: #fff2f1;
+  margin: 75px auto;
+  padding: 145px 265px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.contact-us-container h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: rgb(31, 31, 31);
+}
+
+.contact-us-container p {
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.send-email {
+  position: relative;
+  top: 20px;
+}
+
+.send-email input[type="email"] {
+  width: 600px;
+  padding: 20px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.send-email .btn-panda {
+  position: absolute;
+  padding: 20px 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
